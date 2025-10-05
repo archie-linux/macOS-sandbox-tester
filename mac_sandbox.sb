@@ -1,0 +1,8 @@
+(version 1)
+(deny default)         ; Allow everything by default
+(allow process*)        ; Allow process execution
+(allow sysctl*)         ; Allow system information access
+(allow ipc*)           ; Allow interprocess communication
+(deny network*)         ; Block all network access
+(deny file-write*)      ; Block file writes
+(allow file-read*)  ; Block reading data from files
